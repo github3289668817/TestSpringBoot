@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "person1",
+      "type": "per.xgt.controller.testYml2",
+      "sourceType": "per.xgt.controller.testYml2"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person1.age",
+      "type": "java.lang.Integer",
+      "sourceType": "per.xgt.controller.testYml2"
+    },
+    {
+      "name": "person1.id",
+      "type": "java.lang.Integer",
+      "sourceType": "per.xgt.controller.testYml2"
+    },
+    {
+      "name": "person1.name",
+      "type": "java.lang.String",
+      "sourceType": "per.xgt.controller.testYml2"
+    }
+  ],
+  "hints": []
+}

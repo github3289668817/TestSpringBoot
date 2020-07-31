@@ -1,0 +1,39 @@
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+
+# ��������
+person1:
+  id: 1
+  name: tom
+  age: 24
+# ���ڶ�������
+person2: {id: 1,name: tom,age: 24}
+#�������ݡ�����
+city1:
+  - id
+  - id
+  - id
+  - id
+#�����������ݡ�����
+city2: [����,���,����,�Ϻ�]
+#�������ݡ����ϣ��������ݣ�
+student1:
+  - name: tom
+    age: 18
+    id: 2
+  - name: jack
+    age: 24
+    id: 1
+
+#�������ݡ����϶����������ã�
+student2: [{name: tom,age: 24,id: 1},{name: jack,age: 24,id: 2}]
+#map ����
+map:
+  key1: value1
+  key2: value2

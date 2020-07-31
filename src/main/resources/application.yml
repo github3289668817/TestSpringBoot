@@ -1,0 +1,39 @@
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+
+# 对象配置
+person1:
+  id: 1
+  name: tom
+  age: 24
+# 行内对象配置
+person2: {id: 1,name: tom,age: 24}
+#配置数据、集合
+city1:
+  - id
+  - id
+  - id
+  - id
+#行内配置数据、集合
+city2: [北京,天津,重庆,上海]
+#配置数据、集合（对象数据）
+student1:
+  - name: tom
+    age: 18
+    id: 2
+  - name: jack
+    age: 24
+    id: 1
+
+#配置数据、集合对象（行内配置）
+student2: [{name: tom,age: 24,id: 1},{name: jack,age: 24,id: 2}]
+#map 配置
+map:
+  key1: value1
+  key2: value2
